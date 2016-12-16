@@ -26,7 +26,7 @@ class ScrollLinesFixedCommand(sublime_plugin.TextCommand):
 [
   { "keys": ["alt+up"], "command": "swap_line_up" },
   { "keys": ["alt+down"], "command": "swap_line_down" },
-  { "keys": ["ctrl+alt+up"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 0.95 } },
-  { "keys": ["ctrl+alt+down"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -0.95 } }
+  { "keys": ["ctrl+alt+d"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": 0.95 } },
+  { "keys": ["ctrl+alt+f"], "command": "scroll_lines_fixed", "args": {"by": "pages", "amount": -0.95 } }
 ]
 ```
