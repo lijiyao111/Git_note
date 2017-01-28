@@ -8,8 +8,8 @@
 
 ```
 {
-    "shell_cmd": "\"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat\" & nvcc -Wno-deprecated-gpu-targets \"${file}\" -o \"${file_path}/${file_base_name}\"",
-\\ check the location of your VsDevCmd.bat (Developer Command Prompt for VS2015) file, above shows location on my computer
+    "shell_cmd": "\"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\vsvars32.bat\" & nvcc -Wno-deprecated-gpu-targets \"${file}\" -o \"${file_path}/${file_base_name}\"",
+\\ check the location of your vsvars32.bat, which is in the same location as VsDevCmd.bat (Developer Command Prompt for VS2015) file, above shows location on my computer
 
     "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
     "working_dir": "${file_path}",
@@ -19,7 +19,7 @@
     [
         {
             "name": "Run",
-            "shell_cmd": "\"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat\" & nvcc -Wno-deprecated-gpu-targets \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
+            "shell_cmd": "\"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\vsvars32.bat\" & nvcc -Wno-deprecated-gpu-targets \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
         }
     ]
 }
